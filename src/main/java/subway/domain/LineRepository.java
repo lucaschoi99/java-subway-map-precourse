@@ -19,4 +19,12 @@ public class LineRepository {
     public static boolean deleteLineByName(String name) {
         return lines.removeIf(line -> Objects.equals(line.getName(), name));
     }
+
+    // 주어진 이름을 가진 노선이 있는지 여부를 확인
+    public static Line hasLine(String name) {
+        return lines.stream()
+                .filter(line -> line.getName().equals(name))
+                .findAny()
+                .orElse(null);
+    }
 }
