@@ -14,7 +14,9 @@ public class Line {
         return name;
     }
 
-    // 노선에 존재하는 역 정보를 관리
+    /**
+     * 노선에 존재하는 역 정보를 관리
+      */
     private List<Station> existingStations = new ArrayList<>();
 
     public void addStation(Station station) {
