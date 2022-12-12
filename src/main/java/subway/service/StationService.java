@@ -11,7 +11,7 @@ public class StationService {
      * 1. 역 관리
      */
     // 역 등록
-    public Station addNewStation(String newStation) {
+    public void addNewStation(String newStation) {
         Station station = new Station(newStation);
         StationRepository.addStation(station);
     }
