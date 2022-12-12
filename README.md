@@ -3,6 +3,31 @@
 
 <br>
 
+# 나의 기능 구현
+> 패키지 분리
+- `view`: OutputView, InputView
+- `domain`: Line, LineRepository, Station, StationRepository
+- `service`: StationService, LineService, PathService, MapService
+- `utils`: ValidateUserInput, ErrorMessage
+- `공통`: Application(main)
+
+> 구현 클래스 소개 
+- `InputView`: 사용자 입력을 담당하는 클래스.
+- `OutputView`: 프로그램 출력 결과를 담당하는 클래스.
+- `Line`: 노선 정보를 담은 객체 클래스.
+- `LineRepository`: 노선 객체를 저장해 관리하는 클래스.
+- `Station`: 역 정보를 담은 객체 클래스.
+- `StationRepository`: 역 객체를 저장해 관리하는 클래스.
+- `StationService`: 역 관리 기능을 담당하는 클래스.
+- `LineService`: 노선 관리 기능을 담당하는 클래스.
+- `PathService`: 구간 관리 기능을 담당하는 클래스.
+- `MapService`: 지하철 노선도 출력 기능을 담당하는 클래스.
+- `ValidateUserInput`: 올바르지 않은 사용자 입력값을 검증하는 클래스.
+- `ErrorMessage`: 올바르지 않은 사용자 입력값에 대한 에러 메세지를 모아 관리하는 클래스.
+- `Application`: 프로그램 전체 흐름을 담당하는 클래스.
+
+<br>
+
 ## 🚀 기능 요구사항
 
 ### 초기 설정 
